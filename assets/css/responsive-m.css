@@ -1,0 +1,42 @@
+/*Responsive Media Querries for Mobile*/
+
+/*Iphone 5 = 320x568 */
+@media screen and (max-width: 320px) {
+
+}
+
+/*Iphone 6 = 375x667 */
+@media screen and (max-width: 375px) {
+
+}
+
+/*Iphone 6+ = 414x736 */
+@media screen and (max-width: 767px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    h6{
+        font-size: 15px
+    }
+    span{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    a{
+        font-size: 16px;
+    }
+}

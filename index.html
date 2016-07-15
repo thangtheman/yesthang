@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/core.css">
+</head>
+<body>
+
+<div style="margin: 100px"></div>
+
+<section>
+    <div class="container">
+        <div class="slider slider-Img" >
+            <div><img alt="" class="slideImg" src="assets/img/slide/1.jpg"></div>
+            <div><img alt="" class="slideImg" src="assets/img/slide/2.jpg"></div>
+            <div><img alt="" class="slideImg" src="assets/img/slide/3.jpg"></div>
+            <div><img alt="" class="slideImg" src="assets/img/slide/1.jpg"></div>
+            <div><img alt="" class="slideImg" src="assets/img/slide/2.jpg"></div>
+            <div><img alt="" class="slideImg" src="assets/img/slide/3.jpg"></div>
+            <div><img alt="" class="slideImg" src="assets/img/slide/1.jpg"></div>
+            <div><img alt="" class="slideImg" src="assets/img/slide/2.jpg"></div>
+            <div><img alt="" class="slideImg" src="assets/img/slide/3.jpg"></div>
+        </div>
+        <div class="slider slider-Info space">
+            <div>
+                <h2>Title 1</h2>
+                <p>Much to our (pleasant) surprise, we found that Laura created a little
+                    Insta account for her baby yogi too. @MiniLauraSykora, all of 2-years-old
+                    doing headstands and acro yoga, is the cutest thing you'll see today. With
+                    matching outfits, ballerina buns, and effortless form.</p>
+            </div>
+            <div>
+                <h2>Title 2</h2>
+                <p>Much to our (pleasant) surprise, we found that Laura created a little
+                    Insta account for her baby yogi too. @MiniLauraSykora, all of 2-years-old
+                    doing headstands and acro yoga, is the cutest thing you'll see today. With
+                    matching outfits, ballerina buns, and effortless form.</p>
+            </div>
+            <div>
+                <h2>Title 3</h2>
+                <p>Much to our (pleasant) surprise, we found that Laura created a little
+                    Insta account for her baby yogi too. @MiniLauraSykora, all of 2-years-old
+                    doing headstands and acro yoga, is the cutest thing you'll see today. With
+                    matching outfits, ballerina buns, and effortless form.</p>
+            </div>
+            <div>
+                <h2>Title 4</h2>
+                <p>Much to our (pleasant) surprise, we found that Laura created a little
+                    Insta account for her baby yogi too. @MiniLauraSykora, all of 2-years-old
+                    doing headstands and acro yoga, is the cutest thing you'll see today. With
+                    matching outfits, ballerina buns, and effortless form.</p>
+            </div>
+            <div>
+                <h2>Title 5</h2>
+                <p>Much to our (pleasant) surprise, we found that Laura created a little
+                    Insta account for her baby yogi too. @MiniLauraSykora, all of 2-years-old
+                    doing headstands and acro yoga, is the cutest thing you'll see today. With
+                    matching outfits, ballerina buns, and effortless form.</p>
+            </div>
+            <div>
+                <h2>Title 6</h2>
+                <p>Much to our (pleasant) surprise, we found that Laura created a little
+                    Insta account for her baby yogi too. @MiniLauraSykora, all of 2-years-old
+                    doing headstands and acro yoga, is the cutest thing you'll see today. With
+                    matching outfits, ballerina buns, and effortless form.</p>
+            </div>
+            <div>
+                <h2>Title 7</h2>
+                <p>Much to our (pleasant) surprise, we found that Laura created a little
+                    Insta account for her baby yogi too. @MiniLauraSykora, all of 2-years-old
+                    doing headstands and acro yoga, is the cutest thing you'll see today. With
+                    matching outfits, ballerina buns, and effortless form.</p>
+            </div>
+            <div>
+                <h2>Title 8</h2>
+                <p>Much to our (pleasant) surprise, we found that Laura created a little
+                    Insta account for her baby yogi too. @MiniLauraSykora, all of 2-years-old
+                    doing headstands and acro yoga, is the cutest thing you'll see today. With
+                    matching outfits, ballerina buns, and effortless form.</p>
+            </div>
+        </div>
+        <div class="slider no-gutter slider-Nav space" >
+            <div class="no-gutter col-xs-2"><img alt="" src="assets/img/slide/1.jpg"></div>
+            <div class=" col-xs-2"><img alt="" src="assets/img/slide/2.jpg"></div>
+            <div class=" col-xs-2"><img alt="" src="assets/img/slide/3.jpg"></div>
+            <div class=" col-xs-2"><img alt="" src="assets/img/slide/1.jpg"></div>
+            <div class=" col-xs-2"><img alt="" src="assets/img/slide/2.jpg"></div>
+            <div class=" col-xs-2"><img alt="" src="assets/img/slide/3.jpg"></div>
+            <div class=" col-xs-2"><img alt="" src="assets/img/slide/1.jpg"></div>
+            <div class=" col-xs-2"><img alt="" src="assets/img/slide/2.jpg"></div>
+            <div class=" col-xs-2"><img alt="" src="assets/img/slide/3.jpg"></div>
+        </div>
+    </div>
+</section>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="assets/js/slick/slick.js"></script>
+<script>
+    $('.slider-Img').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        draggable:false,
+        fade: true,
+        asNavFor: '.slider-Nav'
+    });
+    $('.slider-Info').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        draggable:false,
+        fade: true,
+        asNavFor: '.slider-Nav'
+    });
+    $('.slider-Nav').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: '.slider-Img, .slider-Info',
+        focusOnSelect: true,
+        touchMove:false,
+        prevArrow: '<i class="fa fa-chevron-left prevArrow fa-2x" aria-hidden="true"></i>',
+        nextArrow: '<i class="fa fa-chevron-right nextArrow fa-2x" aria-hidden="true"></i>',
+    });
+</script>
+</body>
+</html>
